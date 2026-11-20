@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumbo a Tomorrowland · FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: cabecera nocturna + franja de fechas clave + buscador + secciones con respuestas desplegables. Tema único oscuro. */
+:root{
+  --night:#0b0918;
+  --dusk:#171331;
+  --panel:#1d1838;
+  --line:#3a3160;
+  --gold:#d8b25c;
+  --gold-soft:#f0dca6;
+  --lilac:#b9a8f0;
+  --text:#ece8f7;
+  --muted:#a69fc2;
+  --display:"Cinzel", "Trajan Pro", Georgia, serif;
+  --body:"Manrope", "Segoe UI", system-ui, sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--night);
+  color:var(--text);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold-soft);text-underline-offset:3px}
+a:hover{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* Cabecera */
+.hero{
+  position:relative;
+  padding:56px 20px 44px;
+  text-align:center;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(216,178,92,.22), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 15% 0%, rgba(120,90,220,.28), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 85% 10%, rgba(185,168,240,.18), transparent 70%),
+    linear-gradient(180deg, #120e2a 0%, var(--night) 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero > *:not(canvas){position:relative}
+.badge{
+  display:inline-block;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  color:var(--gold-soft);
+  border:1px solid rgba(216,178,92,.45);
+  border-radius:999px;padding:5px 14px;
+  background:rgba(11,9,24,.55);
+}
+h1{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(30px,6.5vw,56px);
+  line-height:1.1;letter-spacing:.04em;
+  margin:18px 0 10px;
+  text-wrap:balance;
+  background:linear-gradient(180deg,#fff6dc 0%,var(--gold) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:4px 0 14px}
+.ornament span{height:1px;width:60px;background:linear-gradient(90deg,transparent,var(--gold))}
+.ornament span:last-child{transform:scaleX(-1)}
+.lead{max-width:560px;margin:0 auto;color:var(--muted);font-size:17px}
+
+main{max-width:880px;margin:0 auto;padding:0 20px 64px}
+
+/* Fechas clave */
+.dates{margin:36px 0 8px}
+.section-label{
+  font-family:var(--display);font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 14px;
+}
+.timeline{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;
+  list-style:none;margin:0;padding:0;
+}
+.timeline li{
+  background:var(--dusk);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;display:flex;flex-direction:column;gap:2px;
+}
+.timeline .when{font-weight:700;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+.timeline .what{font-size:14px;color:var(--text);line-height:1.4}
+.timeline .hour{font-size:12px;color:var(--muted)}
+.timeline li.key{border-color:rgba(216,178,92,.6);background:linear-gradient(180deg,rgba(216,178,92,.12),var(--dusk))}
+.tz-note{font-size:13px;color:var(--muted);margin:10px 0 0}
+
+/* Buscador y filtros */
+.tools{
+  position:sticky;top:0;z-index:5;
+  background:linear-gradient(180deg,var(--night) 80%,rgba(11,9,24,0));
+  padding:22px 0 14px;margin-top:20px;
+}
+.search{position:relative}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted)}
+#q{
+  width:100%;font:inherit;font-size:16px;color:var(--text);
+  background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:14px 16px 14px 46px;
+}
+#q::placeholder{color:var(--muted)}
+#q:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(216,178,92,.18)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{
+  flex:none;font:inherit;font-size:14px;font-weight:600;cursor:pointer;
+  color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;
+}
+.chip:hover{color:var(--text);border-color:var(--lilac)}
+.chip[aria-pressed="true"]{color:var(--night);background:var(--gold);border-color:var(--gold)}
+
+/* Secciones */
+.cat{margin-top:34px}
+.cat h2{
+  font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:.03em;
+  margin:0 0 12px;color:var(--text);display:flex;align-items:baseline;gap:10px;text-wrap:balance;
+}
+.cat h2 small{font-family:var(--body);font-size:13px;color:var(--muted);font-weight:500;letter-spacing:0}
+.qa{display:flex;flex-direction:column;gap:8px}
+details{
+  background:var(--dusk);border:1px solid var(--line);border-radius:12px;
+  transition:border-color .2s;
+}
+details[open]{border-color:rgba(216,178,92,.55);background:var(--panel)}
+summary{
+  list-style:none;cursor:pointer;padding:15px 48px 15px 18px;position:relative;
+  font-weight:600;font-size:16px;line-height:1.45;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"";position:absolute;right:20px;top:50%;width:9px;height:9px;
+  border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s;
+}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.answer{padding:0 18px 16px;color:#d6d0ea;max-width:68ch}
+.answer p{margin:0 0 10px}
+.answer p:last-child,.answer ul:last-child{margin-bottom:0}
+.answer ul{margin:0 0 10px;padding-left:20px}
+.answer li{margin-bottom:4px}
+.answer strong{color:var(--text)}
+.tip{
+  border-left:3px solid var(--gold);padding:8px 12px;margin:10px 0 0;
+  background:rgba(216,178,92,.08);border-radius:0 8px 8px 0;font-size:15px;
+}
+.warn{border-left-color:#e07a7a;background:rgba(224,122,122,.1)}
+mark{background:rgba(216,178,92,.35);color:inherit;border-radius:3px;padding:0 2px}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+
+footer{
+  border-top:1px solid var(--line);margin-top:56px;padding-top:24px;
+  font-size:14px;color:var(--muted);
+}
+footer ul{list-style:none;padding:0;margin:10px 0 16px;display:flex;flex-wrap:wrap;gap:8px 18px}
+.motto{font-family:var(--display);color:var(--gold);letter-spacing:.08em;text-align:center;margin-top:28px;font-size:14px}
+
+@media (max-width:480px){
+  .hero{padding:44px 16px 34px}
+  main{padding:0 16px 48px}
+  .timeline{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <span class="badge">Grupo de asistentes · no oficial</span>
+  <h1>Rumbo a Tomorrowland</h1>
+  <div class="ornament" aria-hidden="true"><span></span>✦<span></span></div>
+  <p class="lead">Las dudas que más se repiten en el grupo, respondidas por quienes ya han ido. Edición Bélgica 2027.</p>
+</header>
+
+<main>
+  <section class="dates" aria-labelledby="dates-title">
+    <h2 class="section-label" id="dates-title">Fechas clave 2026–2027</h2>
+    <ol class="timeline">
+      <li class="key"><span class="when">2 dic</span><span class="what">Abre el pre-registro</span><span class="hour">15:00 CET</span></li>
+      <li><span class="when">14 ene</span><span class="what">Abre el simulador de Global Journey</span><span class="hour">Para practicar</span></li>
+      <li class="key"><span class="when">30 ene</span><span class="what">Venta Global Journey</span><span class="hour">17:00 CET</span></li>
+      <li class="key"><span class="when">6 feb</span><span class="what">Preventa entradas y DreamVille</span><span class="hour">17:00 CET</span></li>
+      <li class="key"><span class="when">13 feb</span><span class="what">Venta general entradas y DreamVille</span><span class="hour">17:00 CET</span></li>
+      <li><span class="when">Fin jun</span><span class="what">Llega la caja con la pulsera</span><span class="hour">Junio–julio</span></li>
+      <li><span class="when">16–18 jul</span><span class="what">Fin de semana 1 (W1)</span><span class="hour">Boom, Bélgica</span></li>
+      <li><span class="when">23–25 jul</span><span class="what">Fin de semana 2 (W2)</span><span class="hour">Boom, Bélgica</span></li>
+    </ol>
+    <p class="tz-note">La hora CET es la misma que la de la España peninsular. En Canarias, una hora menos (14:00 y 16:00).</p>
+  </section>
+
+  <div class="tools">
+    <div class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <label for="q" class="sr" style="position:absolute;left:-9999px">Buscar una pregunta</label>
+      <input id="q" type="search" placeholder="Busca: pago, cola, tienda, perlas…" autocomplete="off">
+    </div>
+    <div class="chips" id="chips" role="toolbar" aria-label="Filtrar por tema"></div>
+  </div>
+
+  <div id="faq"></div>
+  <p class="empty" id="empty">No hay ninguna pregunta con esas palabras. Pregunta en el grupo y la añadiremos.</p>
+
+  <footer>
+    <p>Esta información la ha reunido el grupo a partir de su experiencia. Precios y condiciones pueden cambiar: confírmalo siempre en la web oficial antes de comprar.</p>
+    <ul>
+      <li><a href="https://belgium.tomorrowland.com/en/tickets/">Entradas (web oficial)</a></li>
+      <li><a href="https://belgium.tomorrowland.com/en/tickets/accommodations/">Alojamientos DreamVille</a></li>
+      <li><a href="https://belgium.tomorrowland.com/en/tickets/global-journey/">Global Journey</a></li>
+      <li><a href="https://my.tomorrowland.com/support">Soporte My Tomorrowland</a></li>
+    </ul>
+    <p>Actualizado el 20 de noviembre de 2026.</p>
+    <p class="motto">Live Today · Love Tomorrow · Unite Forever</p>
+  </footer>
+</main>
+
+<script>
+const FAQ = [
+{ id:"inicio", title:"Primeros pasos", items:[
+  { q:"¿Qué es lo primero que tengo que hacer?",
+    a:`<ul><li><strong>Crea tu cuenta</strong> en <a href="https://login.tomorrowland.com/register">login.tomorrowland.com/register</a> (si no la tienes ya).</li><li><strong>Pre-regístrate a partir del 2 de diciembre a las 15:00</strong>. Sin pre-registro no puedes entrar a ninguna venta.</li><li>Desde el 14 de enero, <strong>practica con el simulador</strong> y apunta varias opciones de paquete.</li><li>Antes de la venta, <strong>quita el límite diario de la tarjeta</strong> con la que vayas a pagar.</li></ul>` },
+  { q:"¿El 2 de diciembre ya se paga algo?",
+    a:`<p>No. Ese día solo pulsas un botón para apuntarte. No hay venta ni pago. Las ventas empiezan el 30 de enero.</p>` },
+  { q:"¿Tengo que pre-registrarme justo a las 15:00?",
+    a:`<p>No hace falta: puedes hacerlo más tarde sin problema, pero que no se te pase. La única ventaja de ser rápido es entrar entre los <strong>First 20</strong>, las primeras 20 personas de cada país, que tienen venta preferente y reciben un aviso por correo. En España es muy difícil, aunque hay gente del grupo que lo ha conseguido.</p><p>No hay truco: buena conexión y estar delante de la pantalla cuando acabe la cuenta atrás.</p>` },
+  { q:"¿Dónde está la cuenta atrás del pre-registro?",
+    a:`<p>En <a href="https://my.tomorrowland.com/event/tomorrowland-belgium-2027">my.tomorrowland.com/event/tomorrowland-belgium-2027</a>, con tu cuenta iniciada. Desde la app se llega tocando la foto de Tomorrowland 2027 (no en "Descubrir más"). Cuando llega a cero, la página se actualiza sola con el botón para apuntarte.</p><p class="tip">Para todo lo que requiera rapidez, mejor la web desde un ordenador.</p>` },
+  { q:"¿A qué hora es en España?",
+    a:`<p>Las horas oficiales están en CET, que es la hora de la España peninsular: <strong>pre-registro a las 15:00</strong> y <strong>ventas a las 17:00</strong>. En Canarias, una hora menos.</p>` },
+  { q:"Somos varios amigos, ¿necesita cuenta cada uno?",
+    a:`<p>Basta con que compre uno, pero lo recomendable es que <strong>cada uno tenga su cuenta y su pre-registro</strong>. El día de la venta entráis todos a la cola y quien entre primero compra con los datos de los demás. Así tenéis más posibilidades.</p>` },
+  { q:"Si ya he ido otros años, ¿tengo preferencia?",
+    a:`<p>Este año, de momento, no se ha anunciado nada. En ediciones anteriores hubo una preventa en diciembre solo para quienes compraron Global Journey el año anterior. Si la hay, llega un correo.</p>` },
+  { q:"¿Comprar desde un iPhone da ventaja?",
+    a:`<p>No, es un bulo. Da igual el dispositivo; lo que importa es tener buena conexión o wifi.</p>` }
+]},
+{ id:"venta", title:"El día de la venta", items:[
+  { q:"¿Cómo funciona la cola?",
+    a:`<p>Al empezar la venta entras en una sala de espera y te asignan una <strong>posición aleatoria</strong>. No hay contador de personas por delante. Cuando te toca, la web te redirige sola.</p><ul><li><strong>No refresques la página.</strong></li><li>Puede tardar minutos, horas (en el grupo hay esperas de 3 a 6 horas) o no llegar a tocarte. Es suerte: entra menos gente de la que se queda fuera.</li></ul><p class="tip">Prepárate algo de comer y paciencia.</p>` },
+  { q:"¿Cuánto tiempo tengo para comprar cuando entro?",
+    a:`<p>Unos <strong>7–10 minutos</strong> para elegir paquete, rellenar datos y pagar. Con los nervios se pasan volando.</p><p>Ten apuntado de antemano, de todas las personas: nombre, apellidos, email y la dirección de envío de la caja. Y la tarjeta a mano.</p>` },
+  { q:"¿Para cuántas personas puedo comprar?",
+    a:`<ul><li><strong>Global Journey:</strong> hasta 6 personas por compra.</li><li><strong>Ventas de entradas y DreamVille:</strong> hasta 4 por cuenta y compra.</li></ul><p>Hay que meter los datos de todas las personas de la compra.</p>` },
+  { q:"¿Qué significan HOLD ON y SOLD OUT?",
+    a:`<ul><li><strong>HOLD ON</strong> (letrero amarillo): alguien lo tiene reservado pero aún no lo ha pagado. Puede liberarse si le falla el pago, así que sigue intentándolo.</li><li><strong>SOLD OUT</strong>: agotado, pasa al siguiente plan.</li></ul>` },
+  { q:"¿Qué es el simulador y para qué sirve?",
+    a:`<p>Abre el <strong>14 de enero</strong> y es una copia de la tienda de Global Journey: ves precios, horarios de avión, tren o bus y opciones de alojamiento, y puedes entrar todas las veces que quieras.</p><p class="tip">Practica hasta saberte los pasos y prepara planes A, B, C y D. Al entrar, lo primero que elijas puede agotarse mientras compras.</p>` },
+  { q:"¿Si no queda nada desde España?",
+    a:`<p>Prueba paquetes de Global Journey con salida desde otras ciudades de Europa. Hay gente del grupo que entró tarde y compró un paquete desde Londres en tren.</p>` },
+  { q:"¿Qué pasa si me falla el pago en mitad de la compra?",
+    a:`<p>Te devuelve al principio de la tienda y tienes que volver a elegir todo. En Global Journey puedes reintentarlo con otra tarjeta, pero mientras tanto se van agotando opciones. En las ventas de entradas sueltas es mucho más difícil recuperarse.</p>` }
+]},
+{ id:"pago", title:"Pago", items:[
+  { q:"¿Con qué se puede pagar?",
+    a:`<ul><li><strong>Tarjeta de débito</strong>: funciona si tienes el dinero en la cuenta y has quitado el límite.</li><li><strong>Tarjeta de crédito.</strong></li><li><strong>Revolut</strong>: la más recomendada en el grupo, se saca rápido y no da problemas si tiene saldo.</li><li>También aparece PayPal como opción.</li></ul><p class="tip warn">Revisa con tu banco el <strong>límite diario</strong> y el <strong>límite por compra</strong> (hay tarjetas con 6.000 € de límite y solo 500 € por operación), y que permita pagos en el extranjero.</p>` },
+  { q:"¿Es seguro pagar con PayPal?",
+    a:`<p>Circuló una historia de un grupo al que "cancelaron con PayPal" días antes del viaje, pero en realidad habían comprado en una web no oficial que no tenía entradas. El problema fue la web, no PayPal. Aun así, la mayoría del grupo prefiere tarjeta o Revolut.</p>` },
+  { q:"Pagué y luego me llegó un correo de cancelación. ¿Qué hago?",
+    a:`<p>Le ha pasado a gente del grupo, a veces horas o un día después del cargo. Lo más probable es algo del banco (bloqueo de pagos en el extranjero o límites). Escribe a <a href="https://my.tomorrowland.com/support">my.tomorrowland.com/support</a> con la referencia de la compra y pide el motivo. La próxima vez, prueba con otra tarjeta o con Revolut.</p>` }
+]},
+{ id:"paquetes", title:"Paquetes y precios", items:[
+  { q:"¿Qué es Global Journey?",
+    a:`<p>El paquete completo: <strong>transporte</strong> (avión, tren o bus según tu ciudad), <strong>traslados</strong>, <strong>entrada</strong> y <strong>alojamiento</strong> en camping o hotel. Es lo más caro y lo más cómodo, y con él te olvidas hasta julio. Desde que llegas al aeropuerto hay carteles y personal que te indican a dónde ir.</p><p class="tip">Para la primera vez es lo que más recomienda el grupo.</p>` },
+  { q:"¿Cuánto cuesta, más o menos?",
+    a:`<p>Estimaciones del grupo por persona, con Global Journey y vuelo, a partir de los precios de 2026 (este año han subido en torno a un 2,8 %):</p><ul><li>Camping básico (Magnificent Greens): ~1.100–1.200 €</li><li>Easy Tent: ~1.400 €</li><li>Hotel compartido: ~1.600 €</li><li>Hotel individual: ~1.800–1.900 €</li></ul><p>Solo entrada + Magnificent Greens, sin viaje: unos 520 €. Además hay que contar lo que gastes allí en comida y bebida.</p><p class="tip">El precio exacto lo verás en el simulador el 14 de enero, según tu ciudad de salida.</p>` },
+  { q:"¿El precio que sale es por persona o por grupo?",
+    a:`<p>Mira la etiqueta junto al precio: <strong>1p</strong> (o nada) es para una persona; <strong>2p</strong> es para dos.</p>` },
+  { q:"¿Me compensa comprar el vuelo por mi cuenta?",
+    a:`<p>Normalmente no. Un vuelo sin maleta facturada ronda los 300 €, y con Global Journey te entran maleta de mano, maleta facturada, mochila y, si vas de camping, el material de acampada. Además, si vas por libre tienes que organizar los traslados.</p>` },
+  { q:"¿Puedo ir solo un día?",
+    a:`<p>Existen entradas de un día, pero son difíciles de conseguir porque muchos belgas que viven cerca van así. Suele ser más fácil conseguir un Global Journey.</p>` }
+]},
+{ id:"alojamiento", title:"Alojamiento", items:[
+  { q:"¿Qué es DreamVille y qué zonas hay?",
+    a:`<p>DreamVille es el camping oficial del festival. Se entra el jueves y se sale el lunes a las 12:00. Zonas de más barata a más cara:</p><ul><li><strong>Magnificent Greens (MG):</strong> llevas tú todo (tienda, saco, colchón). Es la zona más grande.</li><li><strong>Easy Tent:</strong> la tienda ya montada con colchón, saco y almohada. Hay varios niveles (normal, Spectacular, Supreme…).</li><li><strong>Friendship Garden:</strong> una parcela para un grupo de 10, en tres niveles: solo con carpa de sombra, con sillas, o con tiendas montadas y equipadas. Tiene venta aparte.</li><li><strong>Montagoe:</strong> glamping con cabañas, lo más caro. Se agota muy rápido.</li></ul><p>Detalle de cada zona en la <a href="https://belgium.tomorrowland.com/en/tickets/accommodations/">web oficial de alojamientos</a>.</p>` },
+  { q:"¿Camping u hotel?",
+    a:`<p><strong>Hotel:</strong> cama, ducha, desayuno y enchufes. Un bus te lleva al festival hacia las 12:00, pero la vuelta de madrugada implica una buena caminata hasta la explanada de buses. Por la mañana no hay ambiente.</p><p><strong>Camping:</strong> te levantas ya dentro, hay actividades por la mañana, haces más piña y el jueves está The Gathering, la fiesta de bienvenida del camping. Los baños y duchas están muy limpios.</p><p>La mayoría del grupo prefiere el camping. Con Global Journey, la diferencia entre camping básico y hotel puede ser de unos 700 €.</p>` },
+  { q:"Voy solo, ¿qué alojamiento puedo coger?",
+    a:`<ul><li><strong>Magnificent Greens:</strong> perfecto, llevas tu propia tienda.</li><li><strong>Tienda montada para dos (Easy Tent):</strong> necesitas acompañante; si vas solo, pagas las dos plazas.</li><li><strong>Hotel:</strong> se puede, pero sale caro.</li></ul><p class="tip">Muchos van solos a MG y allí se juntan con el grupo para acampar cerca.</p>` },
+  { q:"¿De dónde saco la tienda si voy a Magnificent Greens?",
+    a:`<ul><li>Llévala en la maleta facturada (una de Decathlon barata sirve).</li><li>Cómprala online en un Decathlon de Bélgica con recogida en tienda.</li><li>Busca en Wallapop: hay mucha de segunda mano.</li><li>Alquílala allí o compra una tienda individual en la web oficial.</li></ul><p>Las de Easy Tent, si las desmontas el lunes, te las puedes quedar de recuerdo.</p>` },
+  { q:"¿Puedo comprar entrada con camping y dormir en un apartamento?",
+    a:`<p>Sí, se puede, pero el traslado diario corre de tu cuenta. Hay shuttles desde Bruselas; taxi y Uber salen carísimos esos días. Ojo: la entrada de camping y la de hotel son accesos distintos, así que consulta en el grupo cómo lo hizo quien ya lo probó.</p>` },
+  { q:"¿Se roba en el camping?",
+    a:`<p>Es muy raro. Muchos ponen candado a la tienda y alquilan una taquilla entre varios para dejar llaves, cartera y documentación. En el festival llevas solo el móvil y la pulsera.</p>` }
+]},
+{ id:"festival", title:"En el festival", items:[
+  { q:"¿Qué son las perlas?",
+    a:`<p>La moneda del festival, que va cargada en la pulsera. En 2026, <strong>200 € = 109 perlas</strong> (unos 1,90 € por perla, contando 4 de regalo). Si recargas por adelantado te regalan perlas cada 100 €. El precio sube un poco cada año.</p>` },
+  { q:"¿Qué tal la comida?",
+    a:`<p>Muy buena y variada. Un plato ronda los 13–14 € (6–7 perlas). Algunos restaurantes se reservan por adelantado con día y hora, y los desayunos del camping se venden en la venta de extras. En 2026 hubo un supermercado en el camping con buenos precios.</p>` },
+  { q:"¿Qué tiempo hace?",
+    a:`<p>De todo, incluso en un mismo día: calor fuerte, lluvia y frío. Las noches son húmedas y frescas.</p><p class="tip">Lleva un buen saco, aislante para el suelo y algo de abrigo para la noche.</p>` },
+  { q:"¿Cómo cargo el móvil?",
+    a:`<ul><li>Lleva una batería externa potente (20.000–30.000 mAh).</li><li>Hay alquiler de baterías: pagas una fianza y la cambias por una cargada tantas veces como quieras. Si al final no la devuelves, te la quedas.</li><li>En los baños del camping hay enchufes. Un ladrón de varias tomas ayuda.</li></ul>` },
+  { q:"¿Cuándo llega la pulsera?",
+    a:`<p>En una caja que llega a finales de junio o principios de julio a la dirección de envío que pusiste al comprar.</p>` },
+  { q:"¿Cuándo se sabe qué DJs tocan?",
+    a:`<p>Tomorrowland publica el cartel completo más adelante. Algunos DJs cambian de un fin de semana a otro.</p>` },
+  { q:"¿Se anda mucho?",
+    a:`<p>Mucho: entre 30 y 40 km al día. Hay unos 16 escenarios, y de un extremo a otro hay más de kilómetro y medio. Calzado cómodo.</p>` },
+  { q:"¿Necesito saber inglés?",
+    a:`<p>Apenas. Hay muchísimos españoles y latinos, y para pedir te apañas con lo básico.</p>` }
+]},
+{ id:"reventas", title:"Reventas, agencias y estafas", items:[
+  { q:"Alguien me ofrece entradas ya. ¿Es fiable?",
+    a:`<p class="tip warn"><strong>No.</strong> Hasta que empiezan las ventas oficiales nadie tiene entradas: ni particulares, ni agencias, ni travel partners. Si te piden una transferencia por adelantado, es una estafa o una reventa inflada.</p><p>Por ejemplo, ya circulan ofertas de Magnificent Greens a 850 € cuando su precio oficial ronda los 520 €. Consulta en el grupo antes de pagar nada a nadie.</p>` },
+  { q:"¿Qué son los travel partners?",
+    a:`<p>Agencias oficiales que venden paquetes con viaje. Para 2027 aún no se han anunciado. Venden después de las ventas oficiales, son más caras y suelen ofrecer solo Magnificent Greens con vuelo (en algún caso solo desde Madrid). También hay de otros países.</p><p>Pedir información o apuntarse a su lista de espera es gratis, así que conviene hacerlo como plan B. Primero, siempre, la web oficial.</p>` },
+  { q:"¿Hay agencias no oficiales de confianza?",
+    a:`<p>Personas del grupo han viajado con <strong>Allein</strong> y <strong>Ekanite</strong> y las consideran fiables. Organizan viajes en grupo a festivales, pero suelen tener plazas más adelante y cobran más que la web oficial.</p>` },
+  { q:"Si al final tengo que comprar en reventa, ¿qué hago?",
+    a:`<p>Es la última opción. Antes de pagar, coméntalo en el grupo: conocemos a casi todos los españoles de ambos fines de semana y podemos decirte si el vendedor es de fiar. Haz siempre un contrato, pide foto del DNI y guarda toda la documentación.</p><p>El grupo abrirá un espacio de reventas fiables a precio razonable cuando hayan empezado las ventas oficiales.</p>` },
+  { q:"¿Hace falta seguro de viaje?",
+    a:`<p>Es opcional. En el grupo se ha hablado de unos 30 €, y varios veteranos han ido siempre sin él.</p>` }
+]},
+{ id:"comunidad", title:"Comunidad", items:[
+  { q:"Voy solo, ¿me voy a sentir solo?",
+    a:`<p>No. Cuando tengas entrada entras en la comunidad de españoles (unas 500 personas), con grupos por zona de camping y de hoteles. Mucha gente va sola el primer año y acaba acampando con otros y repitiendo juntos.</p>` },
+  { q:"¿Qué fin de semana elijo?",
+    a:`<p>Los veteranos de este grupo vamos al <strong>fin de semana 2</strong> (23–25 de julio), así que si te da igual, ¡vente al W2 con nosotros! Algunos DJs cambian de un fin de semana a otro.</p>` },
+  { q:"¿Hay edad para ir?",
+    a:`<p>Ninguna. Hay gente de todas las edades, y la media es más alta de lo que se piensa, porque el viaje es caro. Bastantes del grupo han ido con sus padres.</p>` }
+]}
+];
+
+const faqEl = document.getElementById('faq');
+const chipsEl = document.getElementById('chips');
+const qEl = document.getElementById('q');
+const emptyEl = document.getElementById('empty');
+let activeCat = 'all';
+
+function render(){
+  chipsEl.innerHTML = '';
+  [{id:'all',title:'Todo'}, ...FAQ].forEach(c=>{
+    const b = document.createElement('button');
+    b.className='chip'; b.type='button'; b.id='chip-'+c.id;
+    b.textContent=c.title; b.setAttribute('aria-pressed', c.id===activeCat);
+    b.addEventListener('click',()=>{ activeCat=c.id; chipsEl.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed', x===b)); apply(); });
+    chipsEl.appendChild(b);
+  });
+  faqEl.innerHTML = FAQ.map(c=>`
+    <section class="cat" data-cat="${c.id}" id="${c.id}">
+      <h2>${c.title} <small>${c.items.length} preguntas</small></h2>
+      <div class="qa">${c.items.map(it=>`
+        <details><summary>${it.q}</summary><div class="answer" data-src="${encodeURIComponent(it.a)}">${it.a}</div></details>`).join('')}
+      </div>
+    </section>`).join('');
+}
+
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function highlight(html, term){
+  if(!term) return html;
+  const div = document.createElement('div'); div.innerHTML = html;
+  const walker = document.createTreeWalker(div, NodeFilter.SHOW_TEXT);
+  const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(n=>{
+    const t=n.nodeValue, nt=norm(t); let i=nt.indexOf(term);
+    if(i<0) return;
+    const frag=document.createDocumentFragment(); let last=0;
+    while(i>=0){ frag.append(t.slice(last,i)); const m=document.createElement('mark'); m.textContent=t.slice(i,i+term.length); frag.append(m); last=i+term.length; i=nt.indexOf(term,last); }
+    frag.append(t.slice(last)); n.replaceWith(frag);
+  });
+  return div.innerHTML;
+}
+
+function apply(){
+  const term = norm(qEl.value.trim());
+  let shown = 0;
+  faqEl.querySelectorAll('.cat').forEach(sec=>{
+    const catOk = activeCat==='all' || sec.dataset.cat===activeCat;
+    let any=false;
+    sec.querySelectorAll('details').forEach(d=>{
+      const ans = d.querySelector('.answer');
+      const src = decodeURIComponent(ans.dataset.src);
+      const sum = d.querySelector('summary');
+      if(!sum.dataset.src) sum.dataset.src = sum.textContent;
+      const hit = !term || norm(sum.dataset.src + ' ' + ans.textContent).includes(term) || norm(src).includes(term);
+      d.hidden = !(catOk && hit);
+      ans.innerHTML = highlight(src, term);
+      sum.innerHTML = highlight(sum.dataset.src.replace(/</g,'&lt;'), term);
+      if(term && hit) d.open = true;
+      if(!d.hidden){ any=true; shown++; }
+    });
+    sec.hidden = !any;
+  });
+  emptyEl.style.display = shown ? 'none' : 'block';
+}
+
+let t; qEl.addEventListener('input',()=>{ clearTimeout(t); t=setTimeout(apply,120); });
+render();
+
+/* Cielo estrellado estático */
+(function(){
+  const c=document.getElementById('stars'); const ctx=c.getContext('2d');
+  function draw(){
+    const r=window.devicePixelRatio||1, w=c.clientWidth, h=c.clientHeight;
+    c.width=w*r; c.height=h*r; ctx.scale(r,r);
+    let seed=7; const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+    const n=Math.round(w*h/2600);
+    for(let i=0;i<n;i++){
+      const x=rnd()*w, y=rnd()*h, s=rnd()*1.3+.2, a=rnd()*.7+.15;
+      ctx.fillStyle = rnd()<.15 ? `rgba(240,220,166,${a})` : `rgba(236,232,247,${a})`;
+      ctx.beginPath(); ctx.arc(x,y,s,0,Math.PI*2); ctx.fill();
+    }
+  }
+  draw(); let rt; addEventListener('resize',()=>{clearTimeout(rt); rt=setTimeout(draw,200)});
+})();
+</script>
+</body>
+</html>
