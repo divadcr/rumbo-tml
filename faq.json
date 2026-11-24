@@ -162,6 +162,10 @@
           "a": "<ul><li><strong>Global Journey:</strong> hasta 6 personas por compra.</li><li><strong>Ventas de entradas y DreamVille:</strong> hasta 4 por cuenta y compra.</li></ul><p>Hay que meter los datos de todas las personas de la compra.</p><p>Una vez dentro de la tienda puedes hacer <strong>dos pedidos seguidos sin volver a la cola</strong>: por ejemplo, uno con hotel para dos personas y otro con camping para cuatro.</p><p class=\"tip warn\">Respeta el límite total. A veces la web te deja pasarte haciendo dos pedidos (por ejemplo, 6 entradas sueltas), pero luego lo revisan y cancelan la compra días después.</p>"
         },
         {
+          "q": "¿Puedo comprar los dos fines de semana?",
+          "a": "<p>No existe una entrada para los dos fines de semana, pero puedes comprar entradas de ambos. En las ventas normales se hace en una sola compra. En Global Journey hay que hacer <strong>dos pedidos distintos</strong>, y también pedidos separados si en tu grupo queréis tipos de paquete diferentes.</p>"
+        },
+        {
           "q": "¿Las entradas van a nombre de alguien? ¿Se puede cambiar?",
           "a": "<ul><li><strong>Entradas y paquetes de DreamVille (sin Global Journey):</strong> no hace falta poner los datos al comprar. Tienes unas 3–4 semanas para rellenarlos; pasado ese plazo, la entrada se queda con ese nombre.</li><li><strong>Global Journey:</strong> los datos de todos se ponen en la misma compra y después no se pueden cambiar, salvo pagando unos 350 € por cada cambio y solo hasta abril, más o menos.</li></ul>"
         },
@@ -190,6 +194,10 @@
         {
           "q": "¿Qué pasa si me falla el pago en mitad de la compra?",
           "a": "<p>Te devuelve al principio de la tienda y tienes que volver a elegir todo. En Global Journey puedes reintentarlo con otra tarjeta, pero mientras tanto se van agotando opciones. En las ventas de entradas sueltas es mucho más difícil recuperarse.</p>"
+        },
+        {
+          "q": "He comprado y no veo las entradas en mi cuenta, ¿es normal?",
+          "a": "<p>Sí. Las entradas aparecen en tu cuenta mucho más tarde. Si tienes el PDF de confirmación y te han cobrado, está todo bien.</p>"
         }
       ]
     },
@@ -252,6 +260,10 @@
           "a": "<p>Normalmente no. Este año un vuelo sin maleta facturada ronda los 260–300 €, y con maleta sube bastante. Con Global Journey te entran maleta de mano, maleta facturada, mochila y, si vas de camping, el material de acampada. Además, si vas por libre tienes que organizar los traslados.</p>"
         },
         {
+          "q": "¿Puedo usar solo el vuelo de vuelta de Global Journey?",
+          "a": "<p>Sí, pero tienes que avisar con antelación por correo a <a href=\"mailto:info@globaljourney.com\">info@globaljourney.com</a>. Si no coges el vuelo de ida y no lo has avisado antes, <strong>el de vuelta se cancela automáticamente</strong>.</p>"
+        },
+        {
           "q": "¿Puedo ir solo un día?",
           "a": "<p>Existe la entrada de un día (Day Pass), pero cuesta mucho conseguirla:</p><ul><li>Solo se vende en la preventa y la venta general (6 y 13 de febrero), no en Global Journey, así que renuncias a la primera venta.</li><li>Es muy difícil entrar en esas ventas, y muchos belgas que viven cerca compran días sueltos.</li><li>El sábado es el que antes se agota; puede que solo quede el domingo.</li></ul><p class=\"tip\">Si vas a coger un avión para ir hasta allí, piénsate ir el fin de semana entero.</p>"
         }
@@ -284,15 +296,31 @@
         },
         {
           "q": "¿Puedo ir en coche?",
-          "a": "<p>Sí. Hay parking de pago: hace un par de años costaba unos 40 € para toda la estancia. Si sacas el coche y vuelves, pagas otra vez. Ten en cuenta que muchas carreteras se cortan y hay controles de acceso.</p>"
+          "a": "<p>Sí. Hay parking de pago: hace un par de años costaba unos 40 € para toda la estancia. Si sacas el coche y vuelves, pagas otra vez. Ten en cuenta que muchas carreteras se cortan y hay controles de acceso.</p><p>El parking se compra en la venta de extras (mediados de julio): elige la opción que corresponda a tu alojamiento o entrada. Al llegar, sigue las señales y no el GPS, porque hay desvíos.</p>"
+        },
+        {
+          "q": "Si voy por mi cuenta, ¿cómo llego desde el aeropuerto?",
+          "a": "<ul><li><strong>Taxi:</strong> del aeropuerto de Bruselas cuesta unos 100–150 €, según la hora, el tráfico y el tamaño del grupo. Los taxis reservados de antemano solo pueden recogerte en las zonas Kiss & Ride, que están muy lejos.</li><li><strong>Tren:</strong> hasta la estación de Boom. El jueves y el viernes hay shuttles gratis de la estación a DreamVille, y el lunes de vuelta.</li><li><strong>City Shuttles</strong> y transporte público: es lo más recomendable.</li></ul><p class=\"tip warn\">De noche, un taxi desde el festival cuesta mucho más. Pregunta el precio antes de subir.</p>"
+        },
+        {
+          "q": "Voy en hotel con Global Journey, ¿cómo funcionan los buses?",
+          "a": "<ul><li><strong>Ida:</strong> una sola salida al día, a las 12:00 en punto (los hoteles temáticos suelen tener dos). Si quieres dormir más, tendrás que ir por tu cuenta en tren por Amberes o Puurs (unos 12 €) o en taxi.</li><li><strong>Vuelta:</strong> salen del shuttle hub, un parking a unos 2,5 km. Del Mainstage hay unos 45 minutos andando; en la salida, Global Journey Shuttles a la izquierda.</li><li>Los buses salen cuando se llenan, y el último, una hora después de que acabe el festival. Solo puedes subir al de tu hotel: te lo comprueban con la pulsera de shuttle que te dan en el check-in.</li><li>Hay un shuttle gratis desde la rotonda de la entrada principal al shuttle hub, pero deja de funcionar unos 30 minutos antes del final.</li><li>Si el hotel está en Amberes, también hay trenes nocturnos a Antwerp Berchem y Antwerp Central; el último sale unos 90 minutos después del final.</li></ul><p class=\"tip\">No te quedes mucho después del endshow o puedes perder el bus.</p><p class=\"tip\">Más consejos en la <a href=\"/guia-festival#hoteles\">Guía del festival</a>.</p>"
+        },
+        {
+          "q": "¿Qué es la venta de extras?",
+          "a": "<p>Es la venta del add-on sale, que suele abrir a mediados de julio. Ahí se compran el parking, los shuttles, las taquillas, los desayunos del camping y otros extras. Lo más popular se agota rápido. Si quedan, también se pueden comprar allí mismo.</p><p>El material incluido en tu paquete y lo que compres en esta venta se recoge cerca de las dos entradas de DreamVille.</p>"
         },
         {
           "q": "¿Se roba en el camping?",
-          "a": "<p>Es muy raro. Muchos ponen candado a la tienda y alquilan una taquilla entre varios para dejar llaves, cartera y documentación. En el festival llevas solo el móvil y la pulsera.</p>"
+          "a": "<p>Es muy raro. Muchos ponen candado a la tienda y alquilan una taquilla entre varios para dejar llaves, cartera y documentación. En el festival llevas solo el móvil y la pulsera.</p><p class=\"tip warn\">La guía de r/Tomorrowland es menos optimista: avisa de que en DreamVille hay robos y de que algunos ladrones rajan las tiendas. No dejes nada de valor dentro. Las Easy Tent ya traen candado.</p>"
         },
         {
           "q": "¿Se puede llevar bebida al camping?",
           "a": "<p>Sí, en el camping se puede tener alcohol, siempre en <strong>plástico o en lata: no se permite cristal</strong>. El primer día revisan la maleta por encima. Dentro del festival las copas son caras (unos 14 €).</p>"
+        },
+        {
+          "q": "¿Qué consejos hay para el camping?",
+          "a": "<ul><li><strong>Llegar más tarde</strong> tiene ventajas: acabas más al fondo, pero con más espacio y menos ruido de noche. Magnificent Greens se suele llenar desde la entrada 2 (este) hacia la entrada 1 (oeste).</li><li><strong>Un carrito</strong> para el material: se anda mucho y hay tablones de madera por todo DreamVille, así que rueda bien.</li><li><strong>Sombra:</strong> casi no hay árboles. Una carpa para el grupo cuesta unos 40 € y protege del sol y la lluvia. Si hay viento fuerte, el personal desmonta las carpas.</li><li><strong>Tienda de calidad</strong> y bien sujeta: algunas de las que venden allí no aguantan un temporal.</li><li><strong>Abrigo para dormir</strong>, bolsas de basura o estancas para la ropa, chanclas para la ducha, toallitas y cinta americana.</li><li>Hay barbacoas y hamacas gratis.</li><li>Los sacos de las Easy Tent son de talla única.</li></ul><p class=\"tip\">Más consejos en la <a href=\"/guia-festival#dreamville\">Guía del festival</a>.</p>"
         }
       ]
     },
@@ -302,7 +330,7 @@
       "items": [
         {
           "q": "¿Qué son las perlas?",
-          "a": "<p>La moneda del festival, que va cargada en la pulsera. En 2026, <strong>200 € = 109 perlas</strong> (unos 1,90 € por perla, contando 4 de regalo). Si recargas por adelantado te regalan perlas cada 100 €. El precio sube un poco cada año.</p>"
+          "a": "<p>La moneda del festival, que va cargada en la pulsera. En 2026, <strong>200 € = 109 perlas</strong> (unos 1,90 € por perla, contando 4 de regalo). Si recargas por adelantado te regalan perlas cada 100 €. El precio sube un poco cada año.</p><p>Con la pulsera se paga casi todo, salvo el Carrefour, los puestos de tabaco y algunos puestos especiales. Si recargas online, después del festival te devuelven las perlas que no hayas gastado (menos una pequeña comisión). Sin alcohol, con unas 15–30 perlas al día llegas para comer y beber.</p><p class=\"tip\">Fíjate en cuántas perlas te cobran: a veces se equivocan y cobran de más.</p>"
         },
         {
           "q": "¿A qué hora empieza y acaba el festival?",
@@ -310,11 +338,11 @@
         },
         {
           "q": "¿Qué tal la comida?",
-          "a": "<p>Muy buena y variada. Un plato ronda los 13–14 € (6–7 perlas). Algunos restaurantes se reservan por adelantado con día y hora, y los desayunos del camping se venden en la venta de extras. En 2026 hubo un supermercado en el camping con buenos precios.</p>"
+          "a": "<p>Muy buena y variada. Un plato ronda los 13–14 € (6–7 perlas). Algunos restaurantes se reservan por adelantado con día y hora, y los desayunos del camping se venden en la venta de extras. En 2026 hubo un supermercado en el camping con buenos precios.</p><p>Dentro de DreamVille hay un <strong>Lidl que solo acepta tarjeta</strong>, y a unos 15 minutos andando de la entrada 2 (este) hay un Carrefour. Los vales de los restaurantes suelen salir a mediados de junio y muchos se agotan casi al instante.</p>"
         },
         {
           "q": "¿Se puede beber el agua del grifo?",
-          "a": "<p>Normalmente sí, así que lleva una botella o bolsa reutilizable para rellenarla. Algunos grifos tienen un cartel que avisa de que no es potable: en esos, mejor no.</p>"
+          "a": "<p>Normalmente sí, así que lleva una botella o bolsa reutilizable para rellenarla. Algunos grifos tienen un cartel que avisa de que no es potable: en esos, mejor no.</p><p>El agua que venden te la dan en lata o en botella sin tapón, así que una mochila de hidratación (camelback) o una botella plegable vacía es lo más práctico: se rellena gratis en los baños.</p>"
         },
         {
           "q": "¿Qué tiempo hace?",
@@ -327,6 +355,14 @@
         {
           "q": "¿Cómo cargo el móvil?",
           "a": "<ul><li>Lleva una batería externa potente (20.000–30.000 mAh).</li><li>Hay alquiler de baterías: pagas una fianza y la cambias por una cargada tantas veces como quieras. Si al final no la devuelves, te la quedas.</li><li>En las <strong>duchas de pago</strong> del camping hay enchufes; en las gratuitas al aire libre, no. Un ladrón de varias tomas ayuda.</li></ul>"
+        },
+        {
+          "q": "¿Hay taquillas?",
+          "a": "<p>Sí, en DreamVille y en el festival. No se acaban, aunque algunos tamaños sí se agotan. Las del festival van con código y algunas de DreamVille, con llave. Se pueden comprar allí o antes, en la venta de extras.</p>"
+        },
+        {
+          "q": "¿Hay WiFi o cobertura?",
+          "a": "<p>No hay WiFi público ni en el festival ni en DreamVille. Con una tarifa española tienes roaming en la UE, pero entre tanta gente la cobertura puede fallar. Acordad un <strong>punto de encuentro</strong> por si os perdéis: casi todo el mundo elige algún sitio reconocible del Mainstage.</p>"
         },
         {
           "q": "¿Cuándo llega la pulsera?",
@@ -342,7 +378,23 @@
         },
         {
           "q": "¿Puedo salir del recinto y volver a entrar?",
-          "a": "<p>Sí. Con la pulsera puedes salir al pueblo y volver a entrar sin pagar nada.</p>"
+          "a": "<p>Sí. Con la pulsera puedes salir al pueblo y volver a entrar sin pagar nada.</p><p class=\"tip\">Ojo si duermes en DreamVille: hay dos entradas al festival (la de DreamVille, junto al Mainstage, y la principal, junto al Freedom Stage). Si entras o sales por la principal con pulsera de DreamVille, ese día ya no puedes volver a entrar.</p>"
+        },
+        {
+          "q": "¿Puedo entrar bebida o botellas al recinto?",
+          "a": "<p>No. En el recinto del festival no se puede entrar comida ni bebida, ni botellas, salvo que estén vacías y sean plegables. Los días de mucho calor a veces dejan entrar una botella con tapón. El cristal está prohibido en todas partes, también en DreamVille (incluidos los perfumes).</p><p>En las Comfort areas (Mainstage, Library y Freedom Stage) tampoco se puede entrar ni sacar bebida: tienen su propia carta, algo más cara.</p>"
+        },
+        {
+          "q": "¿Qué está prohibido?",
+          "a": "<ul><li><strong>Drogas:</strong> basta una pastilla o un porro para que te expulsen, y hay perros.</li><li><strong>Tocar la decoración</strong>, en el festival y en DreamVille: te pueden quitar la pulsera, y sin pulsera no hay acceso.</li><li><strong>Medicamentos con receta</strong> sin informe médico.</li><li><strong>Palos selfi</strong> de más de 1 metro extendidos. Las banderas grandes, los tótems y las cámaras 360 no están bien vistos porque tapan la vista.</li></ul>"
+        },
+        {
+          "q": "¿Qué no me puedo perder?",
+          "a": "<ul><li>El <strong>espectáculo de apertura</strong> del Mainstage, normalmente hacia las 17:00.</li><li>El <strong>endshow</strong> del Mainstage después del último artista. Es igual todas las noches, así que mucha gente lo deja para el último día.</li><li>La <strong>Ferris Wheel</strong> (la noria): es gratis y se accede por la izquierda del Freedom Stage. Si llueve, la cierran.</li><li>Los <strong>escenarios pequeños</strong>, que a veces sorprenden más que los grandes.</li><li>El estudio de <strong>One World Radio</strong>, junto al Cage Stage.</li></ul><p class=\"tip\">En la Tomorrowland Festival App (icono rosa) puedes marcar tus artistas y te avisa 10 minutos antes de su set.</p>"
+        },
+        {
+          "q": "¿Qué tengo que llevar?",
+          "a": "<ul><li>Calzado cómodo que se pueda ensuciar.</li><li>Crema solar (en los puntos de información la dan gratis) y gafas de sol.</li><li>Chubasquero: ya no regalan ponchos, y allí cuestan 6 perlas.</li><li>Tapones para los oídos, para los conciertos y para dormir.</li><li>Pantalón con bolsillos de cremallera o riñonera: hay carteristas, sobre todo cerca del Mainstage.</li><li>Botiquín básico y la medicación, con informe médico si lleva receta.</li><li>Una bolsa estanca para el móvil y la documentación.</li><li>Todo impreso o con copia en el móvil: entradas, reservas y recibos.</li></ul><p class=\"tip\">La lista completa está en la <a href=\"/guia-festival#que-llevar\">Guía del festival</a>.</p>"
         },
         {
           "q": "¿Necesito saber inglés?",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FaqBrowser from "@/components/FaqBrowser";
 import Stars from "@/components/Stars";
 import TicketGuide from "@/components/TicketGuide";
@@ -8,6 +9,7 @@ const LINKS = [
   { href: "https://belgium.tomorrowland.com/en/tickets/accommodations/", label: "Alojamientos DreamVille" },
   { href: "https://belgium.tomorrowland.com/en/tickets/global-journey/", label: "Global Journey" },
   { href: "https://my.tomorrowland.com/support", label: "Soporte My Tomorrowland" },
+  { href: "/guia-festival", label: "Guía del festival (r/Tomorrowland en español)" },
 ];
 
 export default function Home() {
@@ -25,7 +27,12 @@ export default function Home() {
         <p className="lead">
           Las dudas que más se repiten en el grupo, respondidas por quienes ya han ido. Edición Bélgica 2027.
         </p>
-        <TicketGuide />
+        <div className="hero-links">
+          <TicketGuide />
+          <Link href="/guia-festival" className="festival-link">
+            Guía del festival
+          </Link>
+        </div>
       </header>
 
       <main>
