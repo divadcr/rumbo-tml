@@ -1,15 +1,117 @@
 {
   "updated": "2026-11-20",
+  "summary": {
+    "intro": "Si solo vas a leer una cosa, que sea esto. Lo esencial para conseguir entrada a Tomorrowland Bélgica 2027 y no perderte nada.",
+    "dates": [
+      {
+        "when": "2 dic",
+        "what": "Abre el pre-registro",
+        "hour": "15:00 CET",
+        "key": true
+      },
+      {
+        "when": "14 ene",
+        "what": "Abre el simulador de Global Journey",
+        "hour": "Para practicar"
+      },
+      {
+        "when": "30 ene",
+        "what": "Venta Global Journey",
+        "hour": "17:00 CET",
+        "key": true
+      },
+      {
+        "when": "6 feb",
+        "what": "Preventa entradas y DreamVille",
+        "hour": "17:00 CET",
+        "key": true
+      },
+      {
+        "when": "13 feb",
+        "what": "Venta general entradas y DreamVille",
+        "hour": "17:00 CET",
+        "key": true
+      },
+      {
+        "when": "Fin jun",
+        "what": "Llega la caja con la pulsera",
+        "hour": "Junio–julio"
+      },
+      {
+        "when": "16–18 jul",
+        "what": "Fin de semana 1 (W1)",
+        "hour": "Boom, Bélgica"
+      },
+      {
+        "when": "23–25 jul",
+        "what": "Fin de semana 2 (W2)",
+        "hour": "Boom, Bélgica"
+      }
+    ],
+    "datesNote": "La hora CET es la misma que la de la España peninsular. En Canarias, una hora menos (14:00 y 16:00).",
+    "points": [
+      {
+        "title": "Pre-regístrate o no podrás comprar",
+        "text": "<p>Crea tu cuenta y apúntate <strong>a partir del 2 de diciembre a las 15:00</strong>. Ese día no se paga nada, pero sin pre-registro no entras a ninguna venta. Mejor que cada persona del grupo tenga su cuenta.</p>",
+        "links": [
+          "primeros-pasos",
+          "pago-2-diciembre"
+        ]
+      },
+      {
+        "title": "Para la primera vez, Global Journey",
+        "text": "<p>Incluye transporte, traslados, entrada y alojamiento. Calcula unos <strong>1.100–1.900 € por persona</strong> según elijas camping o hotel. El grupo recomienda camping.</p>",
+        "links": [
+          "global-journey",
+          "precios",
+          "camping-u-hotel"
+        ]
+      },
+      {
+        "title": "El día de la venta: paciencia y plan B",
+        "text": "<p>Entras en una cola con <strong>posición aleatoria</strong> y no debes refrescar. Cuando te toca tienes <strong>7–10 minutos</strong>: lleva apuntados los datos de todos y varios planes practicados en el simulador.</p>",
+        "links": [
+          "cola",
+          "tiempo-compra",
+          "simulador"
+        ]
+      },
+      {
+        "title": "Prepara la tarjeta antes",
+        "text": "<p>Quita el <strong>límite diario y por compra</strong> y comprueba que acepta pagos en el extranjero. Revolut es la opción más recomendada en el grupo.</p>",
+        "links": [
+          "metodos-pago"
+        ]
+      },
+      {
+        "title": "Nadie vende entradas antes de la venta oficial",
+        "text": "<p>Si alguien te ofrece entradas ahora y te pide una transferencia, <strong>es una estafa o una reventa inflada</strong>. Pregunta en el grupo antes de pagar nada.</p>",
+        "links": [
+          "ofertas-antes-de-venta"
+        ]
+      },
+      {
+        "title": "Si vas solo, no vas a estar solo",
+        "text": "<p>Hay una comunidad de unos 500 españoles con grupos por zona. Los veteranos del grupo van al <strong>fin de semana 2</strong> (23–25 de julio).</p>",
+        "links": [
+          "voy-solo",
+          "fin-de-semana"
+        ]
+      }
+    ]
+  },
   "categories": [
     {
       "id": "inicio",
       "title": "Primeros pasos",
       "items": [
         {
+          "id": "primeros-pasos",
           "q": "¿Qué es lo primero que tengo que hacer?",
           "a": "<ul><li><strong>Crea tu cuenta</strong> en <a href=\"https://login.tomorrowland.com/register\">login.tomorrowland.com/register</a> (si no la tienes ya).</li><li><strong>Pre-regístrate a partir del 2 de diciembre a las 15:00</strong>. Sin pre-registro no puedes entrar a ninguna venta.</li><li>Desde el 14 de enero, <strong>practica con el simulador</strong> y apunta varias opciones de paquete.</li><li>Antes de la venta, <strong>quita el límite diario de la tarjeta</strong> con la que vayas a pagar.</li></ul>"
         },
         {
+          "id": "pago-2-diciembre",
           "q": "¿El 2 de diciembre ya se paga algo?",
           "a": "<p>No. Ese día solo pulsas un botón para apuntarte. No hay venta ni pago. Las ventas empiezan el 30 de enero.</p>"
         },
@@ -44,10 +146,12 @@
       "title": "El día de la venta",
       "items": [
         {
+          "id": "cola",
           "q": "¿Cómo funciona la cola?",
           "a": "<p>Al empezar la venta entras en una sala de espera y te asignan una <strong>posición aleatoria</strong>. No hay contador de personas por delante. Cuando te toca, la web te redirige sola.</p><ul><li><strong>No refresques la página.</strong></li><li>Puede tardar minutos, horas (en el grupo hay esperas de 3 a 6 horas) o no llegar a tocarte. Es suerte: entra menos gente de la que se queda fuera.</li></ul><p class=\"tip\">Prepárate algo de comer y paciencia.</p>"
         },
         {
+          "id": "tiempo-compra",
           "q": "¿Cuánto tiempo tengo para comprar cuando entro?",
           "a": "<p>Unos <strong>7–10 minutos</strong> para elegir paquete, rellenar datos y pagar. Con los nervios se pasan volando.</p><p>Ten apuntado de antemano, de todas las personas: nombre, apellidos, email y la dirección de envío de la caja. Y la tarjeta a mano.</p>"
         },
@@ -60,6 +164,7 @@
           "a": "<ul><li><strong>HOLD ON</strong> (letrero amarillo): alguien lo tiene reservado pero aún no lo ha pagado. Puede liberarse si le falla el pago, así que sigue intentándolo.</li><li><strong>SOLD OUT</strong>: agotado, pasa al siguiente plan.</li></ul>"
         },
         {
+          "id": "simulador",
           "q": "¿Qué es el simulador y para qué sirve?",
           "a": "<p>Abre el <strong>14 de enero</strong> y es una copia de la tienda de Global Journey: ves precios, horarios de avión, tren o bus y opciones de alojamiento, y puedes entrar todas las veces que quieras.</p><p class=\"tip\">Practica hasta saberte los pasos y prepara planes A, B, C y D. Al entrar, lo primero que elijas puede agotarse mientras compras.</p>"
         },
@@ -78,6 +183,7 @@
       "title": "Pago",
       "items": [
         {
+          "id": "metodos-pago",
           "q": "¿Con qué se puede pagar?",
           "a": "<ul><li><strong>Tarjeta de débito</strong>: funciona si tienes el dinero en la cuenta y has quitado el límite.</li><li><strong>Tarjeta de crédito.</strong></li><li><strong>Revolut</strong>: la más recomendada en el grupo, se saca rápido y no da problemas si tiene saldo.</li><li>También aparece PayPal como opción.</li></ul><p class=\"tip warn\">Revisa con tu banco el <strong>límite diario</strong> y el <strong>límite por compra</strong> (hay tarjetas con 6.000 € de límite y solo 500 € por operación), y que permita pagos en el extranjero.</p>"
         },
@@ -96,10 +202,12 @@
       "title": "Paquetes y precios",
       "items": [
         {
+          "id": "global-journey",
           "q": "¿Qué es Global Journey?",
           "a": "<p>El paquete completo: <strong>transporte</strong> (avión, tren o bus según tu ciudad), <strong>traslados</strong>, <strong>entrada</strong> y <strong>alojamiento</strong> en camping o hotel. Es lo más caro y lo más cómodo, y con él te olvidas hasta julio. Desde que llegas al aeropuerto hay carteles y personal que te indican a dónde ir.</p><p class=\"tip\">Para la primera vez es lo que más recomienda el grupo.</p>"
         },
         {
+          "id": "precios",
           "q": "¿Cuánto cuesta, más o menos?",
           "a": "<p>Estimaciones del grupo por persona, con Global Journey y vuelo, a partir de los precios de 2026 (este año han subido en torno a un 2,8 %):</p><ul><li>Camping básico (Magnificent Greens): ~1.100–1.200 €</li><li>Easy Tent: ~1.400 €</li><li>Hotel compartido: ~1.600 €</li><li>Hotel individual: ~1.800–1.900 €</li></ul><p>Solo entrada + Magnificent Greens, sin viaje: unos 520 €. Además hay que contar lo que gastes allí en comida y bebida.</p><p class=\"tip\">El precio exacto lo verás en el simulador el 14 de enero, según tu ciudad de salida.</p>"
         },
@@ -126,6 +234,7 @@
           "a": "<p>DreamVille es el camping oficial del festival. Se entra el jueves y se sale el lunes a las 12:00. Zonas de más barata a más cara:</p><ul><li><strong>Magnificent Greens (MG):</strong> llevas tú todo (tienda, saco, colchón). Es la zona más grande.</li><li><strong>Easy Tent:</strong> la tienda ya montada con colchón, saco y almohada. Hay varios niveles (normal, Spectacular, Supreme…).</li><li><strong>Friendship Garden:</strong> una parcela para un grupo de 10, en tres niveles: solo con carpa de sombra, con sillas, o con tiendas montadas y equipadas. Tiene venta aparte.</li><li><strong>Montagoe:</strong> glamping con cabañas, lo más caro. Se agota muy rápido.</li></ul><p>Detalle de cada zona en la <a href=\"https://belgium.tomorrowland.com/en/tickets/accommodations/\">web oficial de alojamientos</a>.</p>"
         },
         {
+          "id": "camping-u-hotel",
           "q": "¿Camping u hotel?",
           "a": "<p><strong>Hotel:</strong> cama, ducha, desayuno y enchufes. Un bus te lleva al festival hacia las 12:00, pero la vuelta de madrugada implica una buena caminata hasta la explanada de buses. Por la mañana no hay ambiente.</p><p><strong>Camping:</strong> te levantas ya dentro, hay actividades por la mañana, haces más piña y el jueves está The Gathering, la fiesta de bienvenida del camping. Los baños y duchas están muy limpios.</p><p>La mayoría del grupo prefiere el camping. Con Global Journey, la diferencia entre camping básico y hotel puede ser de unos 700 €.</p>"
         },
@@ -190,6 +299,7 @@
       "title": "Reventas, agencias y estafas",
       "items": [
         {
+          "id": "ofertas-antes-de-venta",
           "q": "Alguien me ofrece entradas ya. ¿Es fiable?",
           "a": "<p class=\"tip warn\"><strong>No.</strong> Hasta que empiezan las ventas oficiales nadie tiene entradas: ni particulares, ni agencias, ni travel partners. Si te piden una transferencia por adelantado, es una estafa o una reventa inflada.</p><p>Por ejemplo, ya circulan ofertas de Magnificent Greens a 850 € cuando su precio oficial ronda los 520 €. Consulta en el grupo antes de pagar nada a nadie.</p>"
         },
@@ -216,10 +326,12 @@
       "title": "Comunidad",
       "items": [
         {
+          "id": "voy-solo",
           "q": "Voy solo, ¿me voy a sentir solo?",
           "a": "<p>No. Cuando tengas entrada entras en la comunidad de españoles (unas 500 personas), con grupos por zona de camping y de hoteles. Mucha gente va sola el primer año y acaba acampando con otros y repitiendo juntos.</p>"
         },
         {
+          "id": "fin-de-semana",
           "q": "¿Qué fin de semana elijo?",
           "a": "<p>Los veteranos de este grupo vamos al <strong>fin de semana 2</strong> (23–25 de julio), así que si te da igual, ¡vente al W2 con nosotros! Algunos DJs cambian de un fin de semana a otro.</p>"
         },
