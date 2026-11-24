@@ -10,6 +10,7 @@ Preguntas frecuentes del grupo de WhatsApp "Rumbo a TML", que ayuda a quienes va
 - `app/`, `components/`, `lib/` — la web en Next.js (App Router). Se genera como página estática.
   - `app/page.tsx` — cabecera, Resumen inicial (con las fechas clave) y pie.
   - `components/FaqBrowser.tsx` — buscador (sin tener en cuenta tildes, resalta coincidencias) y filtros por tema.
+  - `components/TicketGuide.tsx` + `lib/guia.ts` — la **Guía selección de entrada**: un asistente paso a paso que termina en el nombre oficial en inglés del paquete que hay que buscar el día de la venta. Los textos, opciones y nombres están en `lib/guia.ts`. Se abre con el botón de la cabecera o con el enlace `/#guia`.
   - `components/Stars.tsx` — el cielo estrellado de la cabecera.
   - `app/globals.css` — los estilos del prototipo.
 - `index.html` — el prototipo original en un solo archivo, como referencia.

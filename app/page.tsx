@@ -1,5 +1,6 @@
 import FaqBrowser from "@/components/FaqBrowser";
 import Stars from "@/components/Stars";
+import TicketGuide from "@/components/TicketGuide";
 import { faq, formatDate, questionById } from "@/lib/faq";
 
 const LINKS = [
@@ -24,6 +25,7 @@ export default function Home() {
         <p className="lead">
           Las dudas que más se repiten en el grupo, respondidas por quienes ya han ido. Edición Bélgica 2027.
         </p>
+        <TicketGuide />
       </header>
 
       <main>
