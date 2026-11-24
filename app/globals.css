@@ -26,7 +26,7 @@ body{
 /* Mosaico de fondo (dibujos originales: noria, carpa, luna, notas, mariposas…). La cabecera lo tapa con su propio fondo. */
 body::before{
   content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:url("/mosaico.svg") repeat;opacity:.17;
+  background:url("/mosaico.svg") repeat;opacity:.27;
 }
 a{color:var(--gold-soft);text-underline-offset:3px}
 a:hover{color:var(--gold)}
