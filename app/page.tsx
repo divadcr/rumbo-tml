@@ -1,6 +1,5 @@
 import Link from "next/link";
 import FaqBrowser from "@/components/FaqBrowser";
-import Stars from "@/components/Stars";
 import TicketGuide from "@/components/TicketGuide";
 import { faq, formatDate, questionById } from "@/lib/faq";
 
@@ -17,8 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="hero">
-        <Stars />
+      <header className="hero hero-photo">
         <span className="badge">Grupo de asistentes · no oficial</span>
         <h1>Rumbo a Tomorrowland</h1>
         <div className="ornament" aria-hidden="true">
