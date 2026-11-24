@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-24",
   "summary": {
     "intro": "Si solo vas a leer una cosa, que sea esto. Lo esencial para conseguir entrada a Tomorrowland Bélgica 2027 y no perderte nada.",
     "dates": [
@@ -64,16 +64,18 @@
         "links": [
           "global-journey",
           "precios",
+          "dias-global-journey",
           "camping-u-hotel"
         ]
       },
       {
         "title": "El día de la venta: paciencia y plan B",
-        "text": "<p>Entras en una cola con <strong>posición aleatoria</strong> y no debes refrescar. Cuando te toca tienes <strong>7–10 minutos</strong>: lleva apuntados los datos de todos y varios planes practicados en el simulador.</p>",
+        "text": "<p>Entras en una cola con <strong>posición aleatoria</strong> y no debes refrescar. Cuando te toca tienes <strong>7–10 minutos</strong>: lleva apuntados los datos de todos y varios planes practicados en el simulador. Si no lo consigues el 30 de enero, sigue el 6 y el 13 de febrero (ya sin Global Journey).</p>",
         "links": [
           "cola",
           "tiempo-compra",
-          "simulador"
+          "simulador",
+          "si-no-consigo"
         ]
       },
       {
@@ -117,7 +119,7 @@
         },
         {
           "q": "¿Tengo que pre-registrarme justo a las 15:00?",
-          "a": "<p>No hace falta: puedes hacerlo más tarde sin problema, pero que no se te pase. La única ventaja de ser rápido es entrar entre los <strong>First 20</strong>, las primeras 20 personas de cada país, que tienen venta preferente y reciben un aviso por correo. En España es muy difícil, aunque hay gente del grupo que lo ha conseguido.</p><p>No hay truco: buena conexión y estar delante de la pantalla cuando acabe la cuenta atrás.</p>"
+          "a": "<p>No hace falta: puedes hacerlo más tarde sin problema, pero que no se te pase. La única ventaja de ser rápido es entrar entre los <strong>First 20</strong>, las primeras 20 personas de cada país, que tienen una venta propia en la que pueden comprar hasta 4 entradas y reciben un aviso por correo. En España es muy difícil, aunque hay gente del grupo que lo ha conseguido.</p><p>No hay truco: buena conexión y estar delante de la pantalla cuando acabe la cuenta atrás.</p>"
         },
         {
           "q": "¿Dónde está la cuenta atrás del pre-registro?",
@@ -129,11 +131,11 @@
         },
         {
           "q": "Somos varios amigos, ¿necesita cuenta cada uno?",
-          "a": "<p>Basta con que compre uno, pero lo recomendable es que <strong>cada uno tenga su cuenta y su pre-registro</strong>. El día de la venta entráis todos a la cola y quien entre primero compra con los datos de los demás. Así tenéis más posibilidades.</p>"
+          "a": "<p>Basta con que compre uno, pero lo recomendable es que <strong>cada uno tenga su cuenta y su pre-registro</strong>. El día de la venta entráis todos a la cola y quien entre primero compra para los demás. Así tenéis más posibilidades.</p><ul><li>Quien compra pone el nombre, los apellidos y el email de cada persona. Después, la entrada aparece en la cuenta de Tomorrowland de cada uno.</li><li>Se paga todo de una vez, así que la tarjeta del comprador tiene que tener <strong>límite y saldo para el total</strong>.</li><li>Las pulseras de todo el grupo llegan a la dirección del comprador, pero cada una ya va asignada a su persona.</li></ul><p class=\"tip\">¿Es un regalo sorpresa? Puedes crearles la cuenta con otro email tuyo, siempre con su nombre y apellidos. Normalmente no piden DNI; en Global Journey, los datos deben coincidir con el documento con el que se viaja.</p>"
         },
         {
           "q": "Si ya he ido otros años, ¿tengo preferencia?",
-          "a": "<p>Este año, de momento, no se ha anunciado nada. En ediciones anteriores hubo una preventa en diciembre solo para quienes compraron Global Journey el año anterior. Si la hay, llega un correo.</p>"
+          "a": "<p>Este año, de momento, no se ha anunciado nada. En ediciones anteriores hubo una preventa en diciembre solo para quienes compraron Global Journey el año anterior. Si la hay, llega un correo.</p><p>En el grupo creemos que, si la hay, podría abrirse después del simulador del 14 de enero y antes de la venta del 30.</p>"
         },
         {
           "q": "¿Comprar desde un iPhone da ventaja?",
@@ -157,11 +159,15 @@
         },
         {
           "q": "¿Para cuántas personas puedo comprar?",
-          "a": "<ul><li><strong>Global Journey:</strong> hasta 6 personas por compra.</li><li><strong>Ventas de entradas y DreamVille:</strong> hasta 4 por cuenta y compra.</li></ul><p>Hay que meter los datos de todas las personas de la compra.</p>"
+          "a": "<ul><li><strong>Global Journey:</strong> hasta 6 personas por compra.</li><li><strong>Ventas de entradas y DreamVille:</strong> hasta 4 por cuenta y compra.</li></ul><p>Hay que meter los datos de todas las personas de la compra.</p><p>Una vez dentro de la tienda puedes hacer <strong>dos pedidos seguidos sin volver a la cola</strong>: por ejemplo, uno con hotel para dos personas y otro con camping para cuatro.</p><p class=\"tip warn\">Respeta el límite total. A veces la web te deja pasarte haciendo dos pedidos (por ejemplo, 6 entradas sueltas), pero luego lo revisan y cancelan la compra días después.</p>"
         },
         {
-          "q": "¿Qué significan HOLD ON y SOLD OUT?",
-          "a": "<ul><li><strong>HOLD ON</strong> (letrero amarillo): alguien lo tiene reservado pero aún no lo ha pagado. Puede liberarse si le falla el pago, así que sigue intentándolo.</li><li><strong>SOLD OUT</strong>: agotado, pasa al siguiente plan.</li></ul>"
+          "q": "¿Las entradas van a nombre de alguien? ¿Se puede cambiar?",
+          "a": "<ul><li><strong>Entradas y paquetes de DreamVille (sin Global Journey):</strong> no hace falta poner los datos al comprar. Tienes unas 3–4 semanas para rellenarlos; pasado ese plazo, la entrada se queda con ese nombre.</li><li><strong>Global Journey:</strong> los datos de todos se ponen en la misma compra y después no se pueden cambiar, salvo pagando unos 350 € por cada cambio y solo hasta abril, más o menos.</li></ul>"
+        },
+        {
+          "q": "¿Qué significan ON HOLD y SOLD OUT?",
+          "a": "<ul><li><strong>ON HOLD</strong> (letrero amarillo): alguien lo tiene reservado pero aún no lo ha pagado. Puede liberarse si le falla el pago, así que sigue intentándolo.</li><li><strong>SOLD OUT</strong>: agotado, pasa al siguiente plan.</li></ul>"
         },
         {
           "id": "simulador",
@@ -171,6 +177,15 @@
         {
           "q": "¿Si no queda nada desde España?",
           "a": "<p>Prueba paquetes de Global Journey con salida desde otras ciudades de Europa. Hay gente del grupo que entró tarde y compró un paquete desde Londres en tren.</p>"
+        },
+        {
+          "id": "si-no-consigo",
+          "q": "No he conseguido nada el 30 de enero, ¿qué hago?",
+          "a": "<p>Sigue intentándolo: el pre-registro vale para todas las ventas. Pero ojo, después del 30 de enero <strong>ya no hay Global Journey</strong>. El 6 de febrero (preventa) y el 13 (venta general) solo se venden entradas y paquetes de DreamVille, sin viaje, así que el transporte lo tendrías que organizar tú.</p><p>Si aun así no hay suerte, mira la sección de reventas y agencias.</p>"
+        },
+        {
+          "q": "¿Qué son la Belgian Pre-Sale y la First 20 Sale?",
+          "a": "<ul><li><strong>Belgian Pre-Sale</strong> (6 de febrero, 11:00 CET): solo para residentes en Bélgica, porque la pulsera se envía a una dirección postal belga.</li><li><strong>First 20 Sale:</strong> para las 20 primeras personas de cada país que se pre-registran el 2 de diciembre. Pueden comprar hasta 4 entradas y se les avisa por email. Es una oportunidad extra, no una garantía.</li></ul><p>No son nuevas: existen desde hace años.</p>"
         },
         {
           "q": "¿Qué pasa si me falla el pago en mitad de la compra?",
@@ -194,6 +209,10 @@
         {
           "q": "Pagué y luego me llegó un correo de cancelación. ¿Qué hago?",
           "a": "<p>Le ha pasado a gente del grupo, a veces horas o un día después del cargo. Lo más probable es algo del banco (bloqueo de pagos en el extranjero o límites). Escribe a <a href=\"https://my.tomorrowland.com/support\">my.tomorrowland.com/support</a> con la referencia de la compra y pide el motivo. La próxima vez, prueba con otra tarjeta o con Revolut.</p>"
+        },
+        {
+          "q": "Si compro y luego no puedo ir, ¿me devuelven el dinero?",
+          "a": "<p>Depende del motivo. Con causas graves, como un problema médico, hay quien ha escrito a <a href=\"https://my.tomorrowland.com/support\">soporte</a> y le han devuelto el dinero. Otras veces lo han rechazado, así que no cuentes con ello.</p>"
         }
       ]
     },
@@ -204,24 +223,37 @@
         {
           "id": "global-journey",
           "q": "¿Qué es Global Journey?",
-          "a": "<p>El paquete completo: <strong>transporte</strong> (avión, tren o bus según tu ciudad), <strong>traslados</strong>, <strong>entrada</strong> y <strong>alojamiento</strong> en camping o hotel. Es lo más caro y lo más cómodo, y con él te olvidas hasta julio. Desde que llegas al aeropuerto hay carteles y personal que te indican a dónde ir.</p><p class=\"tip\">Para la primera vez es lo que más recomienda el grupo.</p>"
+          "a": "<p>El paquete completo: <strong>transporte</strong> (avión, tren o bus según tu ciudad), <strong>traslados</strong>, <strong>entrada</strong> y <strong>alojamiento</strong> en camping o hotel. Es lo más caro y lo más cómodo, y con él te olvidas hasta julio. Desde que llegas al aeropuerto hay carteles y personal que te indican a dónde ir.</p><p class=\"tip\">Para la primera vez es lo que más recomienda el grupo.</p><p>El alojamiento puede ser <strong>hotel o camping</strong>: con Global Journey también puedes dormir en DreamVille, que es el nombre del camping del festival.</p>"
         },
         {
           "id": "precios",
           "q": "¿Cuánto cuesta, más o menos?",
-          "a": "<p>Estimaciones del grupo por persona, con Global Journey y vuelo, a partir de los precios de 2026 (este año han subido en torno a un 2,8 %):</p><ul><li>Camping básico (Magnificent Greens): ~1.100–1.200 €</li><li>Easy Tent: ~1.400 €</li><li>Hotel compartido: ~1.600 €</li><li>Hotel individual: ~1.800–1.900 €</li></ul><p>Solo entrada + Magnificent Greens, sin viaje: unos 520 €. Además hay que contar lo que gastes allí en comida y bebida.</p><p class=\"tip\">El precio exacto lo verás en el simulador el 14 de enero, según tu ciudad de salida.</p>"
+          "a": "<p>Estimaciones del grupo por persona, con Global Journey y vuelo, de jueves a lunes, a partir de los precios de 2026 (este año suben un poco):</p><ul><li>Camping básico (Magnificent Greens): ~1.150–1.250 €. En 2026, desde Barcelona y llevando tienda propia, salió por 1.203,58 €.</li><li>Easy Tent: ~1.400 €</li><li>Hotel en habitación doble: ~1.500–1.600 €</li><li>Hotel individual: ~1.800–1.900 €</li><li>Montagoe: ~2.000 € o más</li></ul><p>Salir el miércoles en vez del jueves cuesta unos 200 € más.</p><p>Sin viaje: el Full Madness Pass (3 días) costó 432 € en 2026, y la entrada con Magnificent Greens, unos 520 €. Además hay que contar lo que gastes allí en comida y bebida.</p><p class=\"tip\">El precio exacto lo verás en el simulador el 14 de enero, según tu ciudad de salida.</p>"
         },
         {
           "q": "¿El precio que sale es por persona o por grupo?",
           "a": "<p>Mira la etiqueta junto al precio: <strong>1p</strong> (o nada) es para una persona; <strong>2p</strong> es para dos.</p>"
         },
         {
+          "id": "dias-global-journey",
+          "q": "¿Qué días incluye Global Journey? ¿Puedo ir de viernes a domingo?",
+          "a": "<p>El paquete normal va de <strong>jueves a lunes</strong>. También puedes salir el miércoles (unos 200 € más) y volver el lunes o el martes. No hay opción de viernes a domingo: si solo puedes esos días, tendrás que ir con entrada suelta y organizar tú el viaje.</p><ul><li><strong>Si llegas el miércoles</strong>, el jueves puedes hacer la Belgian Journey.</li><li><strong>Si vuelves el martes</strong>, el lunes tienes el <strong>Detox Day</strong>: actividades tranquilas, música relajada, masajes y comida sana.</li></ul>"
+        },
+        {
+          "q": "¿Qué es la Belgian Journey?",
+          "a": "<p>Una excursión el jueves para quienes llegan el miércoles con Global Journey. Recorre varios puntos del centro de Bélgica con un pasaporte que te van sellando en cada parada, y al final te dan un regalo (en 2026, la bandera de Tomorrowland). Termina con una fiesta con DJ hasta las 16:00, más o menos.</p><p>Luego, el jueves por la tarde, quien duerme en el camping tiene <strong>The Gathering</strong> en DreamVille, y quien va a hotel tiene su propia fiesta, de 18:00 a 24:00.</p>"
+        },
+        {
+          "q": "¿Qué es un Party Flight?",
+          "a": "<p>Algunos vuelos de Global Journey aparecen marcados como <strong>\"Party Flight\"</strong> al elegir el horario en la tienda: llevan DJ a bordo. Suele haber uno por ciudad y a menudo sale el jueves por la tarde, con lo que te pierdes la fiesta del jueves. Quien lo ha probado dice que no compensa: no te dejan levantarte ni beber.</p>"
+        },
+        {
           "q": "¿Me compensa comprar el vuelo por mi cuenta?",
-          "a": "<p>Normalmente no. Un vuelo sin maleta facturada ronda los 300 €, y con Global Journey te entran maleta de mano, maleta facturada, mochila y, si vas de camping, el material de acampada. Además, si vas por libre tienes que organizar los traslados.</p>"
+          "a": "<p>Normalmente no. Este año un vuelo sin maleta facturada ronda los 260–300 €, y con maleta sube bastante. Con Global Journey te entran maleta de mano, maleta facturada, mochila y, si vas de camping, el material de acampada. Además, si vas por libre tienes que organizar los traslados.</p>"
         },
         {
           "q": "¿Puedo ir solo un día?",
-          "a": "<p>Existen entradas de un día, pero son difíciles de conseguir porque muchos belgas que viven cerca van así. Suele ser más fácil conseguir un Global Journey.</p>"
+          "a": "<p>Existe la entrada de un día (Day Pass), pero cuesta mucho conseguirla:</p><ul><li>Solo se vende en la preventa y la venta general (6 y 13 de febrero), no en Global Journey, así que renuncias a la primera venta.</li><li>Es muy difícil entrar en esas ventas, y muchos belgas que viven cerca compran días sueltos.</li><li>El sábado es el que antes se agota; puede que solo quede el domingo.</li></ul><p class=\"tip\">Si vas a coger un avión para ir hasta allí, piénsate ir el fin de semana entero.</p>"
         }
       ]
     },
@@ -231,7 +263,7 @@
       "items": [
         {
           "q": "¿Qué es DreamVille y qué zonas hay?",
-          "a": "<p>DreamVille es el camping oficial del festival. Se entra el jueves y se sale el lunes a las 12:00. Zonas de más barata a más cara:</p><ul><li><strong>Magnificent Greens (MG):</strong> llevas tú todo (tienda, saco, colchón). Es la zona más grande.</li><li><strong>Easy Tent:</strong> la tienda ya montada con colchón, saco y almohada. Hay varios niveles (normal, Spectacular, Supreme…).</li><li><strong>Friendship Garden:</strong> una parcela para un grupo de 10, en tres niveles: solo con carpa de sombra, con sillas, o con tiendas montadas y equipadas. Tiene venta aparte.</li><li><strong>Montagoe:</strong> glamping con cabañas, lo más caro. Se agota muy rápido.</li></ul><p>Detalle de cada zona en la <a href=\"https://belgium.tomorrowland.com/en/tickets/accommodations/\">web oficial de alojamientos</a>.</p>"
+          "a": "<p>DreamVille es el camping oficial del festival. Se entra el jueves y se sale el lunes a las 12:00. Los paquetes de DreamVille ya incluyen la entrada a los tres días del festival y a <strong>The Gathering</strong>, la fiesta del jueves en el camping. Zonas de más barata a más cara:</p><ul><li><strong>Magnificent Greens (MG):</strong> llevas tú todo (tienda, saco, colchón). Es la zona más grande y la última en agotarse.</li><li><strong>Easy Tent:</strong> la tienda ya montada con colchón, saco y almohada. Hay varios niveles (normal, Spectacular, Supreme…).</li><li><strong>Friendship Garden:</strong> una parcela para un grupo de 10, en tres niveles: solo con carpa de sombra, con sillas, o con tiendas montadas y equipadas. Tiene venta aparte.</li><li><strong>Montagoe:</strong> glamping con cabañas, lo más caro. Es la zona más pequeña y la primera en agotarse.</li></ul><p class=\"tip\">Si vas a por Montagoe, ten Easy Tent como plan B.</p><p>Detalle de cada zona en la <a href=\"https://belgium.tomorrowland.com/en/tickets/accommodations/\">web oficial de alojamientos</a>.</p>"
         },
         {
           "id": "camping-u-hotel",
@@ -240,7 +272,7 @@
         },
         {
           "q": "Voy solo, ¿qué alojamiento puedo coger?",
-          "a": "<ul><li><strong>Magnificent Greens:</strong> perfecto, llevas tu propia tienda.</li><li><strong>Tienda montada para dos (Easy Tent):</strong> necesitas acompañante; si vas solo, pagas las dos plazas.</li><li><strong>Hotel:</strong> se puede, pero sale caro.</li></ul><p class=\"tip\">Muchos van solos a MG y allí se juntan con el grupo para acampar cerca.</p>"
+          "a": "<ul><li><strong>Magnificent Greens:</strong> perfecto, llevas tu propia tienda o alquilas una allí.</li><li><strong>Easy Tent:</strong> las tiendas montadas son para dos (no hay de una). Si vas solo, pagas las dos plazas.</li><li><strong>Relax Room (Montagoe):</strong> otros años se podía coger para una persona con Global Journey, pagando más que la mitad del precio doble. Se agota rápido.</li><li><strong>Hotel:</strong> se puede, pero sale caro.</li></ul><p class=\"tip\">Muchos van solos a MG y allí se juntan con el grupo para acampar cerca.</p>"
         },
         {
           "q": "¿De dónde saco la tienda si voy a Magnificent Greens?",
@@ -248,11 +280,19 @@
         },
         {
           "q": "¿Puedo comprar entrada con camping y dormir en un apartamento?",
-          "a": "<p>Sí, se puede, pero el traslado diario corre de tu cuenta. Hay shuttles desde Bruselas; taxi y Uber salen carísimos esos días. Ojo: la entrada de camping y la de hotel son accesos distintos, así que consulta en el grupo cómo lo hizo quien ya lo probó.</p>"
+          "a": "<p>Sí, se puede, pero el traslado diario corre de tu cuenta. Hay shuttles desde Bruselas; taxi y Uber salen carísimos esos días. Además, los taxis solo pueden dejarte en el <strong>Kiss &amp; Ride</strong> (si no, les multan) y hay muchas carreteras cortadas con controles.</p><p>Ojo: la entrada de camping y la de hotel son accesos distintos, así que consulta en el grupo cómo lo hizo quien ya lo probó.</p>"
+        },
+        {
+          "q": "¿Puedo ir en coche?",
+          "a": "<p>Sí. Hay parking de pago: hace un par de años costaba unos 40 € para toda la estancia. Si sacas el coche y vuelves, pagas otra vez. Ten en cuenta que muchas carreteras se cortan y hay controles de acceso.</p>"
         },
         {
           "q": "¿Se roba en el camping?",
           "a": "<p>Es muy raro. Muchos ponen candado a la tienda y alquilan una taquilla entre varios para dejar llaves, cartera y documentación. En el festival llevas solo el móvil y la pulsera.</p>"
+        },
+        {
+          "q": "¿Se puede llevar bebida al camping?",
+          "a": "<p>Sí, en el camping se puede tener alcohol, siempre en <strong>plástico o en lata: no se permite cristal</strong>. El primer día revisan la maleta por encima. Dentro del festival las copas son caras (unos 14 €).</p>"
         }
       ]
     },
@@ -265,16 +305,28 @@
           "a": "<p>La moneda del festival, que va cargada en la pulsera. En 2026, <strong>200 € = 109 perlas</strong> (unos 1,90 € por perla, contando 4 de regalo). Si recargas por adelantado te regalan perlas cada 100 €. El precio sube un poco cada año.</p>"
         },
         {
+          "q": "¿A qué hora empieza y acaba el festival?",
+          "a": "<p>Las puertas abren a las 12:00. El viernes y el sábado acaba a la 1:00, y el domingo a las 24:00, por respeto a los vecinos. Así se puede dormir de noche.</p>"
+        },
+        {
           "q": "¿Qué tal la comida?",
           "a": "<p>Muy buena y variada. Un plato ronda los 13–14 € (6–7 perlas). Algunos restaurantes se reservan por adelantado con día y hora, y los desayunos del camping se venden en la venta de extras. En 2026 hubo un supermercado en el camping con buenos precios.</p>"
         },
         {
+          "q": "¿Se puede beber el agua del grifo?",
+          "a": "<p>Normalmente sí, así que lleva una botella o bolsa reutilizable para rellenarla. Algunos grifos tienen un cartel que avisa de que no es potable: en esos, mejor no.</p>"
+        },
+        {
           "q": "¿Qué tiempo hace?",
-          "a": "<p>De todo, incluso en un mismo día: calor fuerte, lluvia y frío. Las noches son húmedas y frescas.</p><p class=\"tip\">Lleva un buen saco, aislante para el suelo y algo de abrigo para la noche.</p>"
+          "a": "<p>De todo, incluso en un mismo día: calor fuerte, lluvia y frío. Las noches son húmedas y frescas.</p><p class=\"tip\">Lleva un buen saco, aislante para el suelo y algo de abrigo para la noche.</p><p>Para el día, un chubasquero y calzado que no se moje.</p>"
+        },
+        {
+          "q": "¿Cómo son las duchas y los baños?",
+          "a": "<ul><li><strong>Baños:</strong> hay muchos, en el camping y cerca de los escenarios, y suelen estar limpios. Apenas hay cola.</li><li><strong>Duchas de pago:</strong> con agua caliente, en una carpa con horario limitado. En 2026 costaban unas 2,5 perlas (casi 5 €) en Magnificent Greens y Friendship Garden, y algo menos en Easy Tent. A las horas punta hay cola; si vas temprano (sobre las 9:00) estás casi solo.</li><li><strong>Duchas gratuitas al aire libre:</strong> siempre abiertas, pero se pasa frío, sobre todo de noche.</li><li><strong>Montagoe:</strong> duchas gratis y abiertas las 24 horas.</li></ul>"
         },
         {
           "q": "¿Cómo cargo el móvil?",
-          "a": "<ul><li>Lleva una batería externa potente (20.000–30.000 mAh).</li><li>Hay alquiler de baterías: pagas una fianza y la cambias por una cargada tantas veces como quieras. Si al final no la devuelves, te la quedas.</li><li>En los baños del camping hay enchufes. Un ladrón de varias tomas ayuda.</li></ul>"
+          "a": "<ul><li>Lleva una batería externa potente (20.000–30.000 mAh).</li><li>Hay alquiler de baterías: pagas una fianza y la cambias por una cargada tantas veces como quieras. Si al final no la devuelves, te la quedas.</li><li>En las <strong>duchas de pago</strong> del camping hay enchufes; en las gratuitas al aire libre, no. Un ladrón de varias tomas ayuda.</li></ul>"
         },
         {
           "q": "¿Cuándo llega la pulsera?",
@@ -289,6 +341,10 @@
           "a": "<p>Mucho: entre 30 y 40 km al día. Hay unos 16 escenarios, y de un extremo a otro hay más de kilómetro y medio. Calzado cómodo.</p>"
         },
         {
+          "q": "¿Puedo salir del recinto y volver a entrar?",
+          "a": "<p>Sí. Con la pulsera puedes salir al pueblo y volver a entrar sin pagar nada.</p>"
+        },
+        {
           "q": "¿Necesito saber inglés?",
           "a": "<p>Apenas. Hay muchísimos españoles y latinos, y para pedir te apañas con lo básico.</p>"
         }
@@ -301,19 +357,19 @@
         {
           "id": "ofertas-antes-de-venta",
           "q": "Alguien me ofrece entradas ya. ¿Es fiable?",
-          "a": "<p class=\"tip warn\"><strong>No.</strong> Hasta que empiezan las ventas oficiales nadie tiene entradas: ni particulares, ni agencias, ni travel partners. Si te piden una transferencia por adelantado, es una estafa o una reventa inflada.</p><p>Por ejemplo, ya circulan ofertas de Magnificent Greens a 850 € cuando su precio oficial ronda los 520 €. Consulta en el grupo antes de pagar nada a nadie.</p>"
+          "a": "<p class=\"tip warn\"><strong>No.</strong> Hasta que empiezan las ventas oficiales nadie tiene entradas: ni particulares, ni agencias, ni travel partners. Si te piden una transferencia por adelantado, es una estafa o una reventa inflada.</p><p>El patrón típico: te escriben por Instagram después de que preguntes algo en redes y te meten prisa (\"si no pagas ahora, en enero costará más de 1.000 €\"). Necesitan tu dinero por adelantado para comprar ellos en la venta oficial y quedarse la diferencia.</p><p>Ejemplos que han llegado al grupo: Magnificent Greens a 850 € (precio oficial, unos 520 €) o entradas sueltas a 990 € (el Full Madness Pass costó 432 € en 2026). Y si una oferta es igual o más barata que el precio oficial, desconfía todavía más. Consulta en el grupo antes de pagar nada a nadie.</p>"
         },
         {
           "q": "¿Qué son los travel partners?",
-          "a": "<p>Agencias oficiales que venden paquetes con viaje. Para 2027 aún no se han anunciado. Venden después de las ventas oficiales, son más caras y suelen ofrecer solo Magnificent Greens con vuelo (en algún caso solo desde Madrid). También hay de otros países.</p><p>Pedir información o apuntarse a su lista de espera es gratis, así que conviene hacerlo como plan B. Primero, siempre, la web oficial.</p>"
+          "a": "<p>Agencias oficiales que venden paquetes con viaje. Para 2027 aún no se han anunciado; aparecerán en la <a href=\"https://belgium.tomorrowland.com/en/sales-info/official-travel-partners/\">página oficial de travel partners</a>. Venden después de las ventas oficiales, son más caras y suelen ofrecer solo Magnificent Greens con vuelo (en algún caso solo desde Madrid). También hay de otros países.</p><p>Desde España, en otros años han estado Unievento y Unicampus, y Sunset Paradise Events desde Canarias; gente del grupo ha viajado con ellas sin problemas. Unievento dice que tendrá información a mediados de diciembre.</p><p>Pedir información o apuntarse a su lista de espera es gratis, así que conviene hacerlo como plan B. Primero, siempre, la web oficial.</p>"
         },
         {
           "q": "¿Hay agencias no oficiales de confianza?",
-          "a": "<p>Personas del grupo han viajado con <strong>Allein</strong> y <strong>Ekanite</strong> y las consideran fiables. Organizan viajes en grupo a festivales, pero suelen tener plazas más adelante y cobran más que la web oficial.</p>"
+          "a": "<p>Personas del grupo han viajado con <strong>Allein</strong> y <strong>Ekanite</strong> y las consideran fiables. Organizan viajes en grupo a festivales, pero suelen tener plazas más adelante y cobran más que la web oficial.</p><p>Otras agencias venden paquetes completos con pago a plazos, desde unos 2.400 € por persona. Para comparar: un Global Journey con vuelo y hotel ronda los 1.500 €.</p>"
         },
         {
           "q": "Si al final tengo que comprar en reventa, ¿qué hago?",
-          "a": "<p>Es la última opción. Antes de pagar, coméntalo en el grupo: conocemos a casi todos los españoles de ambos fines de semana y podemos decirte si el vendedor es de fiar. Haz siempre un contrato, pide foto del DNI y guarda toda la documentación.</p><p>El grupo abrirá un espacio de reventas fiables a precio razonable cuando hayan empezado las ventas oficiales.</p>"
+          "a": "<p>Es la última opción. Antes de pagar, coméntalo en el grupo: conocemos a casi todos los españoles de ambos fines de semana y podemos decirte si el vendedor es de fiar. Haz siempre un contrato, pide foto del DNI y guarda toda la documentación.</p><p>El grupo abrirá un espacio de reventas fiables a precio razonable cuando hayan empezado las ventas oficiales.</p><p>No hay prisa: la reventa suele rondar los 850 € por entrada con Magnificent Greens, y sigue habiendo hasta mayo.</p>"
         },
         {
           "q": "¿Hace falta seguro de viaje?",
@@ -328,7 +384,7 @@
         {
           "id": "voy-solo",
           "q": "Voy solo, ¿me voy a sentir solo?",
-          "a": "<p>No. Cuando tengas entrada entras en la comunidad de españoles (unas 500 personas), con grupos por zona de camping y de hoteles. Mucha gente va sola el primer año y acaba acampando con otros y repitiendo juntos.</p>"
+          "a": "<p>No. Cuando tengas entrada entras en la comunidad de españoles (unas 500 personas), con grupos por zona de camping y de hoteles. Mucha gente va sola el primer año y acaba acampando con otros y repitiendo juntos.</p><p>Además, el miércoles antes del festival quienes ya están allí quedan en el <strong>Delirium</strong>, una cervecería del centro de Bruselas, para conocerse.</p>"
         },
         {
           "id": "fin-de-semana",

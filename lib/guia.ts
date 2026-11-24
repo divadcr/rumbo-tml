@@ -222,12 +222,17 @@ export function resultFor(a: Answers): Result {
   if (a.path === "gj" && transport) {
     const transportRow = { label: "Transporte", value: `${transport.detail} (${transport.name}).` };
     const ticketRow = { label: "Entrada", value: "Incluida: acceso al festival el fin de semana completo." };
+    const datesRow = {
+      label: "Fechas",
+      value: "De jueves a lunes. Puedes salir el miércoles (unos 200 € más) o volver el martes. No hay opción de viernes a domingo.",
+    };
     const sale = "Venta Global Journey: 30 de enero, 17:00 CET.";
     if (a.lodging === "hotel") {
       return {
         names: [{ name: `Global Journey ${transport.short} + Hotel Package` }],
         breakdown: [
           transportRow,
+          datesRow,
           ticketRow,
           { label: "Alojamiento", value: "Hotel con desayuno y bus diario de ida y vuelta al festival." },
         ],
@@ -236,7 +241,7 @@ export function resultFor(a: Answers): Result {
     }
     return {
       names: [{ name: `Global Journey ${transport.name} + ${option?.name}` }],
-      breakdown: [transportRow, ticketRow, { label: "Alojamiento", value: lodgingValue }],
+      breakdown: [transportRow, datesRow, ticketRow, { label: "Alojamiento", value: lodgingValue }],
       sale,
     };
   }
@@ -261,7 +266,7 @@ export function resultFor(a: Answers): Result {
     names: [{ name: option?.name ?? "" }],
     breakdown: [
       ownTransport,
-      { label: "Entrada", value: "Incluida en el paquete de DreamVille: acceso al festival el fin de semana completo." },
+      { label: "Entrada", value: "Incluida en el paquete de DreamVille: los tres días del festival y The Gathering, la fiesta del jueves en el camping." },
       { label: "Alojamiento", value: lodgingValue },
     ],
     sale,
